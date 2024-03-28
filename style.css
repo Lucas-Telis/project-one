@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@300&family=Tilt+Prism&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Faustina', serif;
+}
+:root {
+  --primary: #77f23f;
+  --secondary: rgb(201, 255, 201);
+  --collection: #064800;
+  --tertiary: rgb(0, 30, 0);
+  --quaternary: beige;
+}
+
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.25em;
+}
+h3 {
+  font-size: 1.35em;
+}
+p {
+  font-size: 1.1em;
+}
+button {
+  background: linear-gradient(to right, #48e300, #064800);
+  background-color: #7dff42;
+  color: var(--quaternary);
+
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 19px;
+  border: 1px solid whitesmoke;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 5px 4px 8px 1px
+    rgba(11.781356319043539, 198.42188715934753, 0, 0.5);
+}
+button:hover {
+  background: linear-gradient(to right, #77f23f, #064400);
+  background-color: var(--primary);
+}
+.contenedor {
+  max-width: 2000px;
+  margin: 0;
+}
+header {
+  background-color: var(--secondary);
+  box-shadow: 1px 1px 4px 0px
+    rgba(11.781356319043539, 198.42188715934753, 0, 0.5);
+}
+header img {
+  cursor: pointer;
+  margin: 0;
+  padding: 0 3%;
+}
+header > .contenedor-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.lg {
+  width: 26%;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 10px;
+}
+header a {
+  padding: 3px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--tertiary);
+}
+a:hover {
+  color: #48e300;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: var(--quaternary);
+  height: 80vh;
+  gap: 40px;
+  background-image: url('./assets/imagen-moda.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#marcas {
+  display: inline-block;
+  text-align: center;
+  background-color: grey;
+  margin-top: 3px;
+  padding: 0;
+}
+#marcas img {
+  height: auto;
+  width: 24%;
+  padding: 20px;
+}
+#nuestra-ropa {
+  background-color: var(--tertiary);
+  color: var(--collection);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px;
+  margin-top: 3px;
+  gap: 100px;
+}
+#nuestra-ropa .contenedor h2 {
+  color: var(--quaternary);
+  padding: 10px;
+}
+#nuestra-ropa .ropa {
+  width: 80%;
+  height: 200px;
+  display: inline-block;
+  justify-content: center;
+  padding: 100px;
+  margin: 12px;
+  border-radius: 15px;
+}
+#nuestra-ropa .ropa p {
+  display: none;
+}
+.ropa:first-child {
+  background-image: url(https://www.rekordsport.es/uploads/photo/image/16589/gallery_A06118_1zeWsX68.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ropa:nth-child(2) {
+  background-image: url(https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2142e31d-0752-44e4-bbcb-cd03ac640c69/sportswear-club-pantalon-corto-estampado-ttLX21.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ropa:nth-child(3) {
+  background-image: url(https://javashop.es/img/cms/207604-ZAPATILLAS-SKATE-HOMBRE-NIKE-SB-FORCE-58-PREMIUM-BLANCAS.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ropa:nth-child(4) {
+  background-image: url(https://ar.puma.com/media/contentmanager/content/ACCESOROS%20WMNS%201536X1536.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#nuestra-coleccion .contenedor {
+  text-align: center;
+  padding: 50px 0px;
+  background-color: var(--quaternary);
+}
+#nuestra-coleccion .contenedor h2 {
+  margin: 10px;
+  color: var(--collection);
+}
+.coleccion1,
+.coleccion2 {
+  color: var(--collection);
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  padding: 100px;
+  margin: 0px;
+  margin-bottom: 2%;
+}
+.coleccion1 {
+  background-image: url(./assets/coleccion1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.coleccion2 {
+  background-image: url(./assets/coleccion2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contenedor .img-coleccion {
+  width: 100%;
+  height: 20%;
+  border-radius: 20px;
+}
+footer {
+  padding-top: 10px;
+  background-color: var(--tertiary);
+}
+#redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#redes li {
+  list-style: none;
+  display: inline-block;
+}
+#redes a img {
+  width: 60px;
+  height: 20%;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+}
+#copy {
+  padding: 10px;
+  color: var(--quaternary);
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  header {
+    position: fixed;
+    width: 100%;
+    height: auto;
+  }
+  .lg {
+    width: 20%;
+  }
+  header .contenedor-menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contenedor-menu div {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 10px;
+  }
+}
